@@ -30,7 +30,7 @@
 		"array-bracket-spacing": ["error", "never"],
 		"@typescript-eslint/explicit-function-return-type": "off",
 		// "@typescript-eslint/no-explicit-any": 1,
-		"@typescript-eslint/no-unused-vars": "warn",
+		"@typescript-eslint/no-unused-vars": "off",
 		"react-hooks/rules-of-hooks": "error",
 		"react-hooks/exhaustive-deps": "warn",
 		"jsx-quotes": ["error", "prefer-single"], "react/no-unescaped-entities": "off",
