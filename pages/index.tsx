@@ -18,11 +18,11 @@ import {faBug} from '@fortawesome/free-solid-svg-icons/faBug';
 import {faShieldAlt} from '@fortawesome/free-solid-svg-icons/faShieldAlt';
 import {faSmile} from '@fortawesome/free-solid-svg-icons/faSmile';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import Reviews from '../components/Reviews';
+/* import Reviews from '../components/Reviews';
 
 import reviewWoman1 from '../assets/review-woman-1.jpg';
 import reviewMan1 from '../assets/review-man-1.jpg';
-import reviewMan2 from '../assets/review-man-2.jpg';
+import reviewMan2 from '../assets/review-man-2.jpg'; */
 
 export default function IndexPage({products, mainMenu, footerMenu}: InferGetServerSidePropsType<typeof getServerSideProps>) {
 	return (
