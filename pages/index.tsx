@@ -18,8 +18,7 @@ import {faBug} from '@fortawesome/free-solid-svg-icons/faBug';
 import {faShieldAlt} from '@fortawesome/free-solid-svg-icons/faShieldAlt';
 import {faSmile} from '@fortawesome/free-solid-svg-icons/faSmile';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import Image from 'next/image';
-import logoImg from '../../assets/new-logo.png';/* logo image */
+
 /* import Reviews from '../components/Reviews';
 
 import reviewWoman1 from '../assets/review-woman-1.jpg';
