@@ -18,6 +18,8 @@ import {faBug} from '@fortawesome/free-solid-svg-icons/faBug';
 import {faShieldAlt} from '@fortawesome/free-solid-svg-icons/faShieldAlt';
 import {faSmile} from '@fortawesome/free-solid-svg-icons/faSmile';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import Image from 'next/image';
+import logoImg from '../../assets/new-logo.png';/* logo image */
 /* import Reviews from '../components/Reviews';
 
 import reviewWoman1 from '../assets/review-woman-1.jpg';
@@ -29,7 +31,8 @@ export default function IndexPage({products, mainMenu, footerMenu}: InferGetServ
 		<MainLayout mainMenu={mainMenu} footerMenu={footerMenu}>
 			<div className='container-xxl'>
 				<MainPageSlider />
-				<h1 className='page-heading page-heading_h1  page-heading_m-h1'>NebTech store</h1>
+				{/*<h1 className='page-heading page-heading_h1  page-heading_m-h1'>NebTech store</h1>*/}
+				<Image src={logoImg} className='page-heading page-heading_h1  page-heading_m-h1'/>
 				<ProductsList
 					products={products}
 					className={'page-block'}
