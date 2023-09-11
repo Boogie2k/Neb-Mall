@@ -11,8 +11,7 @@ export default function ShippingPage({mainMenu, footerMenu}: IShippingPageProps)
 				<h1 className='page-heading page-heading_h1  page-heading_m-h1'>Shipping</h1>
 				<div className='text-container'>
 					<p>
-						<a href={'https://google.com'} target={'_blank'}>Lorem ipsum</a> dolor sit amet <b>consectetur</b> adipiscing elit facilisis
-						Shipping Policy
+						
 
 At NebTech, we are committed to providing you with a seamless shopping experience, 
 especially when it comes to the delivery of your orders. Our pay-on-delivery service ensures that you can shop with confidence and pay only when you receive your items. Here's what you need to know about our shipping policy:
@@ -24,29 +23,29 @@ especially when it comes to the delivery of your orders. Our pay-on-delivery ser
 					<p>
 					Our trusted delivery partners will then pick up your package and deliver it to your doorstep. You can expect a hassle-free delivery experience, and our delivery personnel will be happy to assist you.
 					</p>
-					<h2>Payment Options</h2>
+					<h1>Payment Options</h1>
 					<p>
 					With our pay-on-delivery option, you have the flexibility to pay for your order when it arrives at your location. We accept cash payments for your convenience. Please have the exact amount ready to ensure a smooth transaction.
 					</p>
 					<p>
 					We do not require any prepayment or credit card information when you place your order, making it a secure and convenient payment method.
 					</p>
-					<h3>Shipping Fee</h3>
+					<h1>Shipping Fee</h1>
 					<p>
 					NebTech offers competitive shipping rates to make your shopping experience even more budget-friendly. You can find detailed information about shipping fees during the checkout process.
 					</p>
-					<h4>Delivery Timeframes</h4>
+					<h1>Delivery Timeframes</h1>
 					<p>
 						We understand that timely delivery is essential. Our team works diligently to ensure your order reaches you within the estimated delivery timeframe. Delivery times may vary depending on your location and the availability of the items you've ordered.
 					</p>
 					<p>
 						You can track the status of your order using our online tracking system. We'll provide you with the necessary information to keep you informed about your delivery.
 					</p>
-					<h5>Returns and Exchanges</h5>
+					<h1>Returns and Exchanges</h1>
 					<p>
 						In the rare event that you encounter any issues with your order, our customer support team is here to assist you. We have a hassle-free return and exchange policy in place to ensure your satisfaction.
 					</p>
-					<h6>Contact Us</h6>
+					<h1>Contact Us</h1>
 					<p>
 						If you have any questions or need further assistance regarding our shipping policy or any other aspect of your shopping experience, please don't hesitate to contact our customer support team. We are here to help you.
 					</p>
