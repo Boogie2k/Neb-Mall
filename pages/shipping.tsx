@@ -12,40 +12,43 @@ export default function ShippingPage({mainMenu, footerMenu}: IShippingPageProps)
 				<div className='text-container'>
 					<p>
 						<a href={'https://google.com'} target={'_blank'}>Lorem ipsum</a> dolor sit amet <b>consectetur</b> adipiscing elit facilisis
-						justo sodales, pharetra ut efficitur netus
-						suscipit sapien euismod viverra consequat duis diam, rutrum vitae auctor a dui cursus ante odio ornare.
-						<strong>Vivamus a dictum</strong> litora imperdiet elit ridiculus cursus venenatis primis, porttitor vel lectus dapibus
-						tristique quis conubia congue enim, <u>tempor donec</u> cubilia consequat integer <i>ornare felis euismod</i>. Eros enim
-						cras molestie ante varius malesuada cubilia vivamus dui montes ad, sed consectetur praesent vulputate purus
-						risus <em>tempus</em> posuere semper justo, metus parturient tincidunt suspendisse in tempor magna fermentum mollis conubia.
-						Elementum consequat duis platea a et, feugiat quis nostra iaculis ex gravida, pulvinar lorem commodo vitae.
-						Primis rutrum eleifend dui sociosqu ante conubia, faucibus turpis cras magnis pretium tortor, vitae euismod
-						ullamcorper lacinia feugiat semper, ornare sed vulputate venenatis consequat. Magnis pretium rhoncus est ante
-						auctor gravida diam maecenas porttitor, elementum himenaeos egestas tellus magna aliquet ornare.
+						Shipping Policy
+
+At NebTech, we are committed to providing you with a seamless shopping experience, 
+especially when it comes to the delivery of your orders. Our pay-on-delivery service ensures that you can shop with confidence and pay only when you receive your items. Here's what you need to know about our shipping policy:
 					</p>
-					<h1>What is Lorem Ipsum? (h1)</h1>
+					<h1>Delivery Process</h1>
 					<p>
-						Facilisi mollis aliquam eget platea felis luctus, mi montes suspendisse volutpat libero dolor a, hac faucibus lectus id amet. Imperdiet sit dapibus nibh parturient adipiscing tellus, ridiculus habitasse aliquet semper eu duis, consequat sociosqu lacinia eros venenatis. Ut augue sed inceptos ante ex feugiat, vitae mollis purus vivamus. Vulputate semper elementum integer conubia himenaeos quisque velit diam, auctor euismod pretium morbi netus pulvinar nec praesent sit, sollicitudin nisl tempor dolor aliquam consequat sagittis.
+						When you place an order with us, our team works diligently to process and prepare your items for shipment. We aim to dispatch your order as quickly as possible.
 					</p>
-					<h2>What is Lorem Ipsum? (h2)</h2>
 					<p>
-						Facilisi mollis aliquam eget platea felis luctus, mi montes suspendisse volutpat libero dolor a, hac faucibus lectus id amet. Imperdiet sit dapibus nibh parturient adipiscing tellus, ridiculus habitasse aliquet semper eu duis, consequat sociosqu lacinia eros venenatis. Ut augue sed inceptos ante ex feugiat, vitae mollis purus vivamus. Vulputate semper elementum integer conubia himenaeos quisque velit diam, auctor euismod pretium morbi netus pulvinar nec praesent sit, sollicitudin nisl tempor dolor aliquam consequat sagittis.
+					Our trusted delivery partners will then pick up your package and deliver it to your doorstep. You can expect a hassle-free delivery experience, and our delivery personnel will be happy to assist you.
 					</p>
-					<h3>What is Lorem Ipsum? (h3)</h3>
+					<h2>Payment Options</h2>
 					<p>
-						Ex sollicitudin porttitor at a commodo eros cubilia rhoncus sapien montes, mattis mus risus auctor ridiculus etiam aliquam odio duis placerat laoreet, neque quisque imperdiet torquent lacinia dignissim volutpat posuere ut. Parturient maecenas quis etiam et class duis dui laoreet maximus lectus, montes himenaeos varius platea bibendum metus hac dignissim habitasse, elementum dis potenti pulvinar congue dolor malesuada placerat mattis. Felis ad ultrices in pulvinar litora eleifend vestibulum per, cursus iaculis lectus hendrerit urna nisl facilisi, vivamus adipiscing faucibus nulla dignissim hac quis. Cubilia adipiscing augue gravida torquent duis mi non platea, sit conubia vestibulum sem mus nec suspendisse, inceptos amet sodales netus aenean imperdiet ut. Magna iaculis interdum in sed quisque nibh vitae justo netus dolor nunc nec a elementum, consectetur mattis sapien amet tempus per est ante dictum lectus dui fusce.
+					With our pay-on-delivery option, you have the flexibility to pay for your order when it arrives at your location. We accept cash payments for your convenience. Please have the exact amount ready to ensure a smooth transaction.
 					</p>
-					<h4>What is Lorem Ipsum? (h4)</h4>
 					<p>
-						Ex sollicitudin porttitor at a commodo eros cubilia rhoncus sapien montes, mattis mus risus auctor ridiculus etiam aliquam odio duis placerat laoreet, neque quisque imperdiet torquent lacinia dignissim volutpat posuere ut. Parturient maecenas quis etiam et class duis dui laoreet maximus lectus, montes himenaeos varius platea bibendum metus hac dignissim habitasse, elementum dis potenti pulvinar congue dolor malesuada placerat mattis. Felis ad ultrices in pulvinar litora eleifend vestibulum per, cursus iaculis lectus hendrerit urna nisl facilisi, vivamus adipiscing faucibus nulla dignissim hac quis. Cubilia adipiscing augue gravida torquent duis mi non platea, sit conubia vestibulum sem mus nec suspendisse, inceptos amet sodales netus aenean imperdiet ut. Magna iaculis interdum in sed quisque nibh vitae justo netus dolor nunc nec a elementum, consectetur mattis sapien amet tempus per est ante dictum lectus dui fusce.
+					We do not require any prepayment or credit card information when you place your order, making it a secure and convenient payment method.
 					</p>
-					<h5>What is Lorem Ipsum? (h5)</h5>
+					<h3>Shipping Fee</h3>
 					<p>
-						Ex sollicitudin porttitor at a commodo eros cubilia rhoncus sapien montes, mattis mus risus auctor ridiculus etiam aliquam odio duis placerat laoreet, neque quisque imperdiet torquent lacinia dignissim volutpat posuere ut. Parturient maecenas quis etiam et class duis dui laoreet maximus lectus, montes himenaeos varius platea bibendum metus hac dignissim habitasse, elementum dis potenti pulvinar congue dolor malesuada placerat mattis. Felis ad ultrices in pulvinar litora eleifend vestibulum per, cursus iaculis lectus hendrerit urna nisl facilisi, vivamus adipiscing faucibus nulla dignissim hac quis. Cubilia adipiscing augue gravida torquent duis mi non platea, sit conubia vestibulum sem mus nec suspendisse, inceptos amet sodales netus aenean imperdiet ut. Magna iaculis interdum in sed quisque nibh vitae justo netus dolor nunc nec a elementum, consectetur mattis sapien amet tempus per est ante dictum lectus dui fusce.
+					NebTech offers competitive shipping rates to make your shopping experience even more budget-friendly. You can find detailed information about shipping fees during the checkout process.
 					</p>
-					<h6>What is Lorem Ipsum? (h6)</h6>
+					<h4>Delivery Timeframes</h4>
 					<p>
-						Ex sollicitudin porttitor at a commodo eros cubilia rhoncus sapien montes, mattis mus risus auctor ridiculus etiam aliquam odio duis placerat laoreet, neque quisque imperdiet torquent lacinia dignissim volutpat posuere ut. Parturient maecenas quis etiam et class duis dui laoreet maximus lectus, montes himenaeos varius platea bibendum metus hac dignissim habitasse, elementum dis potenti pulvinar congue dolor malesuada placerat mattis. Felis ad ultrices in pulvinar litora eleifend vestibulum per, cursus iaculis lectus hendrerit urna nisl facilisi, vivamus adipiscing faucibus nulla dignissim hac quis. Cubilia adipiscing augue gravida torquent duis mi non platea, sit conubia vestibulum sem mus nec suspendisse, inceptos amet sodales netus aenean imperdiet ut. Magna iaculis interdum in sed quisque nibh vitae justo netus dolor nunc nec a elementum, consectetur mattis sapien amet tempus per est ante dictum lectus dui fusce.
+						We understand that timely delivery is essential. Our team works diligently to ensure your order reaches you within the estimated delivery timeframe. Delivery times may vary depending on your location and the availability of the items you've ordered.
+					</p>
+					<p>
+						You can track the status of your order using our online tracking system. We'll provide you with the necessary information to keep you informed about your delivery.
+					</p>
+					<h5>Returns and Exchanges</h5>
+					<p>
+						In the rare event that you encounter any issues with your order, our customer support team is here to assist you. We have a hassle-free return and exchange policy in place to ensure your satisfaction.
+					</p>
+					<h6>Contact Us</h6>
+					<p>
+						If you have any questions or need further assistance regarding our shipping policy or any other aspect of your shopping experience, please don't hesitate to contact our customer support team. We are here to help you.
 					</p>
 				</div>
 			</div>
