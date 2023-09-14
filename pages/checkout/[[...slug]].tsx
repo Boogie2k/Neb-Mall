@@ -8,6 +8,7 @@ import logoImg from '../../assets/new-logo.png';/* logo image */
 import Head from 'next/head';
 import {useCallback, useEffect, useRef} from 'react';
 
+
 export default function CheckoutPage() {
 	const {id: cartId, cartInited} = useCart();
 	const router = useRouter();

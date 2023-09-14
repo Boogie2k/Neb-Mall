@@ -15,7 +15,7 @@ import currency from 'currency.js';
 export function formatMoney(amount: number | string | null): string {
     if (!amount) return '';
 
-    const customCurrency = currency(amount, { symbol: '₦' }); // Set the currency symbol to '€'
+    const customCurrency = currency(amount, {symbol: '₦'}); // Set the currency symbol to '€'
     return customCurrency.format();
 }
 
