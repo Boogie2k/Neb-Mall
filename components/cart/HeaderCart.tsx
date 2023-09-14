@@ -1,4 +1,4 @@
-import {formatMoney} from '../../lib/formatter';
+import {formatMoney,getCurrencySymbol} from '../../lib/formatter';
 import Link from 'next/link';
 import {useCart} from '../../hooks/cart';
 import clsx from 'clsx';
@@ -9,6 +9,12 @@ export default function HeaderCart({className, icon}: {className?: string, icon?
 	const isEmpty = !total || !total.qty;
 	const isDoubleQty = (total?.qty && total?.qty > 9) ? true : false;
 
+
+	const customSymbol = getCurrencySymbol(); // It will always be '€'
+console.log(customSymbol); // This will display '€' as the currency symbol
+
+const formattedAmount = formatMoney(1000); // Format 1000 with '€' symbol
+console.log(formattedAmount); // This will display the formatted amount with '€' as the currency symbol
 	return (
 		<Link href={'/cart'}>
 			<a className={clsx('cart-header', {

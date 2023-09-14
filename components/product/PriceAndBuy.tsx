@@ -4,7 +4,7 @@ import clsx from 'clsx';
 import {useAppDispatch} from '../../hooks/redux';
 import {addItem2Cart} from '../../redux/actions/cart';
 import {getPriceForTpl, IPriceForTpl} from '../../lib/product';
-import {formatMoney} from '../../lib/formatter';
+import {formatMoney, getCurrencySymbol} from '../../lib/formatter';
 import currency from 'currency.js';
 import {faPlus} from '@fortawesome/free-solid-svg-icons/faPlus';
 import {faMinus} from '@fortawesome/free-solid-svg-icons/faMinus';
@@ -84,6 +84,12 @@ export default function ProductPriceAndBuy({product, selectedVariant, setError, 
 		</div>
 	);
 }
+
+const customSymbol = getCurrencySymbol(); // It will always be '€'
+console.log(customSymbol); // This will display '€' as the currency symbol
+
+const formattedAmount = formatMoney(1000); // Format 1000 with '€' symbol
+console.log(formattedAmount); // This will display the formatted amount with '€' as the currency symbol
 
 interface IPriceAndBuyProps {
 	product: Pick<IProductItem, 'price' | 'has_variants' | 'in_stock' | 'item_id' | 'sku'>;
