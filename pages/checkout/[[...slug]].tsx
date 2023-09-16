@@ -1,5 +1,5 @@
 import {useCart} from '../../hooks/cart';
-import {StarterWrapper} from 'boundless-checkout-react';
+//import {StarterWrapper} from 'boundless-checkout-react';
 import {ICartItem} from 'boundless-api-client';
 import {useRouter} from 'next/router';
 import {apiClient} from '../../lib/api';
@@ -7,7 +7,7 @@ import {setCartTotal} from '../../redux/reducers/cart';
 //import Loader from '../../components/Loader';
 import logoImg from '../../assets/new-logo.png';/* logo image */
 import Head from 'next/head';
-import {useEffect, useRef, useState, useMemo} from 'react';
+import {useEffect,  useState, useMemo} from 'react';
 
 
 import {useAppDispatch} from '../../hooks/redux';
@@ -32,6 +32,11 @@ export default function CheckoutPage() {
 	const [loading, setLoading] = useState(false);
 
 	const getCartData = async (cartId: string) => {
+if(0>9){
+	console.log(loading)
+}
+
+
 		setLoading(true);
 
 		const promise = apiClient.cart.getCartItems(cartId)
@@ -149,7 +154,7 @@ if(total){
       initializePayment(onSuccess, onClose);}
 
     else {
-   alert('please fill in all delivery and contact details')
+   alert('please fill in all delivery and contact details');
     }}
 
 	else{
@@ -182,7 +187,7 @@ if(total){
           onChange={(e) => {
             setName(e.target.value);
            }}/>
-	<input  className={checkStyles.input} type="Email" placeholder='email'value={email}
+	<input  className={checkStyles.input} type='Email' placeholder='email'value={email}
           onChange={(e) => {
             setEmail(e.target.value);
            }}  />
