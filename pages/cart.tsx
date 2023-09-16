@@ -50,6 +50,8 @@ export default function CartPage({mainMenu, footerMenu}: ICartPageProps) {
 		if (cartId) getCartData(cartId);
 	}, [cartId]); //eslint-disable-line
 
+
+	console.log(items)
 	return (
 		<MainLayout mainMenu={mainMenu} footerMenu={footerMenu} noIndex>
 			<div className='container'>
@@ -60,7 +62,10 @@ export default function CartPage({mainMenu, footerMenu}: ICartPageProps) {
 							{(loading || cartInited === TCartInited.processing)
 								? <CartLoader />
 								: items.length > 0
-									? <CartItems items={items} setItems={setItems} total={total}/>
+									?
+									
+									<div><CartItems items={items} setItems={setItems} total={total}/>
+									</div>
 									: <>
 										<p className='cart-page__warning'>
 											Your shopping cart is empty.
