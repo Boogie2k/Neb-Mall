@@ -32,8 +32,8 @@ export default function CheckoutPage() {
 	const [loading, setLoading] = useState(false);
 
 	const getCartData = async (cartId: string) => {
-if(0>9){
-	console.log(loading)
+if(num){
+	console.log(loading);
 }
 
 
