@@ -51,7 +51,6 @@ export default function CartPage({mainMenu, footerMenu}: ICartPageProps) {
 	}, [cartId]); //eslint-disable-line
 
 
-	console.log(items)
 	return (
 		<MainLayout mainMenu={mainMenu} footerMenu={footerMenu} noIndex>
 			<div className='container'>

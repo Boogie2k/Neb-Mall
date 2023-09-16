@@ -1,33 +1,33 @@
 import {useCart} from '../../hooks/cart';
-import { StarterWrapper} from 'boundless-checkout-react';
-import {ICartItem} from 'boundless-api-client'
+import {StarterWrapper} from 'boundless-checkout-react';
+import {ICartItem} from 'boundless-api-client';
 import {useRouter} from 'next/router';
 import {apiClient} from '../../lib/api';
 import {setCartTotal} from '../../redux/reducers/cart';
 //import Loader from '../../components/Loader';
 import logoImg from '../../assets/new-logo.png';/* logo image */
 import Head from 'next/head';
-import { useEffect, useRef, useState, useMemo} from 'react';
+import {useEffect, useRef, useState, useMemo} from 'react';
 
 
 import {useAppDispatch} from '../../hooks/redux';
 import {addPromise} from '../../redux/reducers/xhr';
 import {calcTotal, calcTotalPrice} from '../../lib/calculator';
-import checkStyles from '../../styles/Checkout.module.css'
-import { usePaystackPayment } from "react-paystack";
+import checkStyles from '../../styles/Checkout.module.css';
+import {usePaystackPayment} from 'react-paystack';
 import Image from 'next/image';
 
 export default function CheckoutPage() {
-	const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-   const [num, setNum] = useState("");
-    const [city, setCity] = useState("");
-  const [state, setState] = useState("");
-   const [address, setAddress] = useState("");
+	const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+   const [num, setNum] = useState('');
+    const [city, setCity] = useState('');
+  const [state, setState] = useState('');
+   const [address, setAddress] = useState('');
 
 
 	const dispatch = useAppDispatch();
-	const {id: cartId, cartInited} = useCart();
+	const {id: cartId} = useCart();
 	const [items, setItems] = useState<ICartItem[]>([]);
 	const [loading, setLoading] = useState(false);
 
@@ -62,19 +62,19 @@ export default function CheckoutPage() {
 	}, [cartId]); //eslint-disable-line
 
 
-	console.log(items)
-	console.log(total)
-items.map(item=>{
+	//console.log(items)
+	//console.log(total)
+//items.map(item=>{
 	
-	console.log(item.vwItem.product.sku)})
+	//console.log(item.vwItem.product.sku)})
 
 
-	let b = total.price
+	const b = total.price;
 
- let newString = b.replace("₦", "");
+ const newString = b.replace('₦', '');
 	//const {id: cartId, cartInited} = useCart();
 	const router = useRouter();
-	const checkoutStarter = useRef<StarterWrapper>();
+	//const checkoutStarter = useRef<StarterWrapper>();
 
 //	const {total} = useCart();
 
@@ -113,7 +113,7 @@ items.map(item=>{
 	
 
 
- console.log(+newString)
+// console.log(+newString)
 
 
    const config = {
@@ -122,7 +122,7 @@ items.map(item=>{
     name: name,
     amount:+newString* 100, //Amount is in the country's lowest currency. E.g Kobo, so 20000 kobo = N200
     phoneNumber:num,
-    publicKey: "pk_test_d0725f67a2558608e3a5cb2d22d197d2eeb3cc5c",
+    publicKey: 'pk_test_d0725f67a2558608e3a5cb2d22d197d2eeb3cc5c',
   };
 	
  const onSuccess = () => {
@@ -131,14 +131,14 @@ items.map(item=>{
     // Implementation for whatever you want to do with reference and after success call.
    /*  alert(reference);
     console.log(reference); */
-    alert('Order has been successful, You will receive an email few hours from now and your products will be delivered shortly ')
-	router.push('/')
+    alert('Order has been successful, You will receive an email few hours from now and your products will be delivered shortly ');
+	router.push('/');
   };
 
   // you can call this function anything
   const onClose = () => {
     // implementation for  whatever you want to do when the Paystack dialog closed.
-    console.log("closed");
+    console.log('closed');
   };
 
 const initializePayment = usePaystackPayment(config);
@@ -146,16 +146,16 @@ const initializePayment = usePaystackPayment(config);
  const concludeCheckout=()=>{
 if(total){
     if(name&&email &&address&&num&&state&&city){
-      initializePayment(onSuccess, onClose)}
+      initializePayment(onSuccess, onClose);}
 
     else {
-   alert("please fill in all delivery and contact details")
+   alert('please fill in all delivery and contact details')
     }}
 
 	else{
-		alert('Cart is empty')
+		alert('Cart is empty');
 	}
-  }
+  };
 	
 	return (
 		<>
@@ -169,8 +169,8 @@ if(total){
 <div className={checkStyles.contain}>
 	
 	<div className={checkStyles.checkoutNav}>
-		<h4 onClick={()=>{router.push('/cart')}} className={checkStyles.checkoutBTC}>Back to Cart</h4> 
-		<Image onClick={()=>{router.push('/')}} src={logoImg} alt='img' width={200} height={200}/>
+		<h4 onClick={()=>{router.push('/cart');}} className={checkStyles.checkoutBTC}>Back to Cart</h4> 
+		<Image onClick={()=>{router.push('/');}} src={logoImg} alt='img' width={200} height={200}/>
 	</div>
 <div className={checkStyles.containRows}>
 	
@@ -199,7 +199,7 @@ if(total){
           onChange={(e) => {
             setState(e.target.value);
            }}/>
-	<input className={checkStyles.input} type="Email" placeholder='City ' value={city}
+	<input className={checkStyles.input} type='Email' placeholder='City ' value={city}
           onChange={(e) => {
             setCity(e.target.value);
            }}/>
@@ -224,7 +224,7 @@ items&& items.map(item=>{
 		<div>
 	<p className={checkStyles.productsNames}>  {item.vwItem.product.sku+ '  ' } <span style={{textAlign:'right'}}>{'₦'+ item.itemPrice.final_price}</span> </p>
 </div>
-)})}
+);})}
 <p style={{display:'flex', justifyContent:'space-between'}}> <span style={{fontWeight:'bold'}}>Total:</span> {total.price}</p>
 </div>
 </div>

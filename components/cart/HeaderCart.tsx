@@ -8,7 +8,7 @@ export default function HeaderCart({className, icon}: {className?: string, icon?
 	const {total} = useCart();
 	const isEmpty = !total || !total.qty;
 	const isDoubleQty = (total?.qty && total?.qty > 9) ? true : false;
-console.log(total)
+//console.log(total)
 
 	const customSymbol = getCurrencySymbol(); // It will always be '€'
 console.log(customSymbol); // This will display '€' as the currency symbol

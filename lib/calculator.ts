@@ -77,7 +77,7 @@ export const calcTotalPrice = (finalPrice: number | string, qty: number) => {
     return currency(finalPrice, {symbol: '₦'}).multiply(qty * 1).format(); // Set the currency symbol to '₦'
 };
 
-console.log(calcTotalPrice)
+console.log(calcTotalPrice);
 
 interface ICalcTotalItem {
     qty: number;
